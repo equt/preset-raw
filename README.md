@@ -1,11 +1,11 @@
 This preset is a fork (?) of the [`@unocss/preset-typography`]. And it provides
-the same functionality, but allowing you defining as many variants as possible.
+the same functionality, but allowing you to define as many variants as possible.
 
 [`@unocss/preset-typography`]:
   https://github.com/unocss/unocss/tree/main/packages/preset-typography
 
-This preset currently does nothing (add nothing to your bundle) if no options
-configured. Two options are available,
+The preset does nothing (add nothing to your bundle) unless you've configured to
+do so. There're two options are available,
 
 - `variants` - `Record<string, (theme: Theme) => CSSValues>`
 
@@ -25,8 +25,8 @@ configured. Two options are available,
   }
   ```
 
-  Now there should be two utility classes available, i.e., `prose-light` &
-  `prose-dark`, you could apply it to component like
+  Now there should be two utility classes available, i.e., `prose` &
+  `prose-dark`, you could apply it to your component like
 
   ```html
   <markdown-renderer class="prose dark:prose-dark" :input="source" />
@@ -34,8 +34,7 @@ configured. Two options are available,
 
 - `css` - `(theme: Theme) => Record<string, CSSObject>`
 
-  You could add CSS like object with the above added variables & theme
-  available.
+  You could add CSS like object with the above variables & theme available.
 
   ```typescript
   {
