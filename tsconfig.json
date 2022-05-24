@@ -1,0 +1,7 @@
+{
+  "extends": "@equt/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "incremental": false
+  }
+}
