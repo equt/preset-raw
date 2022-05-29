@@ -41,10 +41,10 @@
     "build": "unbuild"
   },
   "dependencies": {
-    "@unocss/core": "^0.34.1"
+    "@unocss/core": "^0.35.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.0",
+    "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^17.0.0",
     "@equt/eslint-config": "^8.1.0",
     "@equt/prettier-config": "^2.5.1",
@@ -52,7 +52,7 @@
     "eslint": "^8.16.0",
     "husky": "^8.0.1",
     "prettier": "^2.6.2",
-    "typescript": "^4.6.4",
+    "typescript": "^4.7.2",
     "unbuild": "^0.7.4"
   },
   "prettier": "@equt/prettier-config",

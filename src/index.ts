@@ -49,8 +49,7 @@ export default function <Theme>(options?: RawOptions<Theme>): Preset<Theme> {
       {
         layer: LAYER,
         getCSS: ({ theme }) =>
-          // TODO Waiting for https://github.com/unocss/unocss/pull/1003
-          Object.entries(options?.css?.(theme as Theme) ?? {})
+          Object.entries(options?.css?.(theme) ?? {})
             .map<[string, string]>(([selector, css]) => [
               selector
                 .split(',')
