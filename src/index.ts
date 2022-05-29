@@ -36,7 +36,6 @@ export default function <Theme>(options?: RawOptions<Theme>): Preset<Theme> {
     name: '@equt/preset-raw',
     enforce: 'post',
     layers: { [LAYER]: -1 },
-    shortcuts: [],
     rules: selectors.map(selector => [
       new RegExp(`^${selector}$`),
       (_, { theme, rawSelector }) => {
