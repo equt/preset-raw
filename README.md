@@ -1,9 +1,6 @@
 This preset is a fork (?) of the [`@unocss/preset-typography`]. And it provides
 the same functionality, but allowing you to define as many variants as possible.
 
-[`@unocss/preset-typography`]:
-  https://github.com/unocss/unocss/tree/main/packages/preset-typography
-
 The preset does nothing (add nothing to your bundle) unless you've configured to
 do so. There're two options are available,
 
@@ -46,3 +43,22 @@ do so. There're two options are available,
     })
   }
   ```
+
+Note
+
+- To have the `theme` correctly typed, assign the correct `Theme` from your
+  preset, e.g.,
+
+  ```typescript
+  import type { Theme } from '@unocss/preset-mini'
+
+  unocss<Theme>({
+    // ...
+  })
+  ```
+
+- like the [`@unocss/preset-typography`], it's possible to _opt out_ by
+  `.not-{CLASS NAME}`, e.g., `.not-prose`.
+
+[`@unocss/preset-typography`]:
+  https://github.com/unocss/unocss/tree/main/packages/preset-typography
